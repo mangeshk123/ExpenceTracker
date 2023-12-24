@@ -1,0 +1,19 @@
+<div class="form-horizontal">
+    <h2>Add Expense</h2>
+    <div class="row form-group">
+        <div class="row">
+            <div class="col-md-2">Description</div>
+            <div class="col-md-7">
+                <input class="form-control" [(ngModel)]="newExpense.description">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">Amount</div>
+            <div class="col-md-7">
+                <input class="form-control" type="number" [(ngModel)]="newExpense.amount">
+            </div>
+        </div>
+      </div>
+    <button class="btn btn-primary" (click)="addExpense()">Add Expense</button>
+  </div>
+  

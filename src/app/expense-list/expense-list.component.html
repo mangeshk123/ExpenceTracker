@@ -1,0 +1,22 @@
+<div class="container">
+    <h2>Expense List</h2>    
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Description</th>
+                <th>Expenses</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let expense of expenses; let i = index">
+            <tr>
+                <td>{{ expense.description }}</td>
+                <td>${{ expense.amount }}</td>
+                <td>
+                    <!-- <button class="btn btn-primary" (click)="editExpense(i)">Edit</button> -->
+                    <button class="btn btn-primary" (click)="deleteExpense(i)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
